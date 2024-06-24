@@ -5,11 +5,8 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y libgl1-mesa-glx git
 
 RUN git clone https://github.com/ultralytics/yolov5.git
-WORKDIR /app/yolov5
 
-RUN pip install -r requirements.txt
-
-WORKDIR /app
+RUN pip install torch torchvision Pillow numpy streamlit
 
 COPY app.py .
 
