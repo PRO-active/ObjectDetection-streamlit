@@ -3,7 +3,7 @@ import torch
 from PIL import Image
 import numpy as np
 
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+model = torch.load('yolov5s')
 
 st.title('YOLOv5 Object Detection App')
 st.write('Upload an image and the YOLOv5 model will detect objects in the image.')
