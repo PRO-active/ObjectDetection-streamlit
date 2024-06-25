@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y libgl1-mesa-glx git
 
 RUN git clone https://github.com/ultralytics/yolov5.git
 
-RUN pip install torch torchvision Pillow numpy streamlit
+RUN pip install torch torchvision Pillow numpy streamlit opencv-python
 
 COPY app.py .
 
