@@ -3,3 +3,5 @@ torchvision
 Pillow
 numpy
 streamlit
+opencv-python-headless
+git+https://github.com/ultralytics/yolov5.git
